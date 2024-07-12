@@ -8,7 +8,7 @@ const cors = require("cors")
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:3000', // İzin verilecek frontend uygulamasının kaynağı
+    origin: 'https://tutorial-app-edit.vercel.app/', // İzin verilecek frontend uygulamasının kaynağı
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // İzin verilecek HTTP metotları
     allowedHeaders: ['Content-Type', 'Authorization'] // İzin verilecek HTTP başlıkları
 }))

@@ -7,11 +7,7 @@ const express = require("express");
 const cors = require("cors")
 const app = express();
 
-app.use(cors({
-    origin: 'https://tutorial-app-edit.vercel.app/', // İzin verilecek frontend uygulamasının kaynağı
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // İzin verilecek HTTP metotları
-    allowedHeaders: ['Content-Type', 'Authorization'] // İzin verilecek HTTP başlıkları
-}))
+app.use(cors())
 require("dotenv").config();
 const PORT = process.env.PORT || 8000;
 
